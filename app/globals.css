@@ -1,0 +1,366 @@
+@import "tailwindcss";
+
+:root {
+  --bg: #faf6f2;
+  --card: #ffffff;
+  --tx: #2b2b2e;
+  --mu: #65606a;
+  --ac: #6b2346;
+  --ac-hover: #561c38;
+  --ac2: #a8566f;
+  --bd: #e8dfd8;
+  --alt: #f3ebe4;
+  --r: 16px;
+  --r-pill: 999px;
+  --shadow-btn: 0 6px 18px rgba(107, 35, 70, 0.22);
+  --shadow-btn-hover: 0 8px 24px rgba(107, 35, 70, 0.32);
+  --shadow-card: 0 2px 10px rgba(0, 0, 0, 0.04);
+  --shadow-card-hover: 0 6px 20px rgba(107, 35, 70, 0.08);
+}
+
+@theme {
+  --color-bg: #faf6f2;
+  --color-card: #ffffff;
+  --color-tx: #2b2b2e;
+  --color-mu: #65606a;
+  --color-ac: #6b2346;
+  --color-ac-hover: #561c38;
+  --color-ac2: #a8566f;
+  --color-bd: #e8dfd8;
+  --color-alt: #f3ebe4;
+  --font-serif: Georgia, "Times New Roman", serif;
+  --font-sans: system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background-color: var(--bg);
+  color: var(--tx);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 17px;
+  line-height: 1.7;
+}
+
+/* Headings & UI Fonts */
+h1,
+h2,
+h3,
+.btn,
+button,
+.eyebrow,
+dt,
+footer {
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+}
+
+.wrap {
+  max-width: 1040px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+section {
+  padding: 64px 0;
+}
+
+h1 {
+  font-size: clamp(2rem, 5vw, 3.1rem);
+  line-height: 1.15;
+  margin: 0.2em 0 0.4em;
+  color: var(--ac);
+  font-weight: 700;
+}
+
+h2 {
+  font-size: clamp(1.5rem, 3.5vw, 2rem);
+  line-height: 1.25;
+  margin: 0 0 0.6em;
+  color: var(--tx);
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 1.05rem;
+  margin: 0.2em 0;
+  color: var(--tx);
+  font-weight: 600;
+}
+
+p {
+  margin: 0.5em 0;
+}
+
+.eyebrow {
+  display: block;
+  font-size: 0.78rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--ac2);
+  font-weight: 600;
+}
+
+.mu {
+  color: var(--mu);
+  font-size: 0.92rem;
+}
+
+/* Buttons */
+.btn {
+  display: inline-block;
+  background: var(--ac);
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 600;
+  padding: 15px 30px;
+  border-radius: var(--r-pill);
+  box-shadow: var(--shadow-btn);
+  transition: background 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
+  cursor: pointer;
+  border: none;
+}
+
+.btn:hover {
+  background: var(--ac-hover);
+  box-shadow: var(--shadow-btn-hover);
+  transform: translateY(-1px);
+}
+
+.btn:active {
+  transform: translateY(0);
+}
+
+a:focus-visible,
+button:focus-visible {
+  outline: 3px solid var(--ac2);
+  outline-offset: 3px;
+}
+
+/* Hero Section */
+.hero .wrap {
+  display: grid;
+  gap: 36px;
+  align-items: center;
+  grid-template-columns: 1.1fr 0.9fr;
+}
+
+/* Product placeholder / frame */
+.ph {
+  aspect-ratio: 1 / 1;
+  width: 100%;
+  border-radius: var(--r);
+  background: #efe5dd;
+  border: 1px dashed var(--ac2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  box-shadow: var(--shadow-card);
+  transition: box-shadow 0.2s ease;
+}
+
+.ph:hover {
+  box-shadow: var(--shadow-card-hover);
+}
+
+.ph img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Checklist */
+.ticks {
+  list-style: none;
+  padding: 0;
+  margin: 1.2em 0 0;
+  display: grid;
+  gap: 12px;
+}
+
+.ticks li {
+  background: var(--card);
+  border: 1px solid var(--bd);
+  border-radius: 12px;
+  padding: 14px 18px 14px 48px;
+  position: relative;
+  box-shadow: var(--shadow-card);
+  transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.ticks li:hover {
+  border-color: var(--ac2);
+  transform: translateX(2px);
+}
+
+.ticks li:before {
+  content: "✓";
+  position: absolute;
+  left: 18px;
+  color: var(--ac);
+  font-weight: 700;
+}
+
+/* Alt Background Section */
+.alt {
+  background: var(--alt);
+}
+
+/* Product Section */
+.prod {
+  display: grid;
+  gap: 32px;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+}
+
+dl {
+  margin: 1em 0;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 6px 16px;
+}
+
+dt {
+  font-weight: 600;
+  font-family: system-ui, sans-serif;
+  font-size: 0.9rem;
+}
+
+dd {
+  margin: 0;
+}
+
+/* Features & Guide styling handled via Tailwind utility classes */
+
+/* FAQ */
+.faq {
+  border: 1px solid var(--bd);
+  background: var(--card);
+  border-radius: 12px;
+  margin-bottom: 10px;
+  overflow: hidden;
+  box-shadow: var(--shadow-card);
+  transition: border-color 0.2s ease;
+}
+
+.faq:hover {
+  border-color: var(--ac2);
+}
+
+.faq button {
+  width: 100%;
+  text-align: left;
+  background: none;
+  border: 0;
+  padding: 16px 20px;
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--tx);
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+}
+
+.faq button::after {
+  content: "+";
+  color: var(--ac);
+  font-size: 1.3rem;
+  line-height: 1;
+}
+
+.faq button[aria-expanded="true"]::after {
+  content: "–";
+}
+
+.faq .a {
+  padding: 0 20px 16px;
+}
+
+/* Final CTA */
+.final {
+  background: var(--ac);
+  color: #ffffff;
+  text-align: center;
+  border-radius: 24px;
+  padding: 48px 24px;
+  box-shadow: var(--shadow-btn);
+}
+
+.final h2 {
+  color: #ffffff;
+}
+
+.final p {
+  color: #ffffff;
+}
+
+.final .btn {
+  background: #ffffff;
+  color: var(--ac);
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.15);
+}
+
+.final .btn:hover {
+  background: #f3e6ee;
+}
+
+.final .mu {
+  color: #ead9e2;
+}
+
+/* Footer */
+footer {
+  padding: 32px 0 48px;
+  border-top: 1px solid var(--bd);
+  font-size: 0.88rem;
+  color: var(--mu);
+}
+
+footer a {
+  color: var(--mu);
+  margin-right: 16px;
+  text-decoration: underline;
+}
+
+footer a:hover {
+  color: var(--ac);
+}
+
+.sr {
+  position: absolute;
+  left: -9999px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 760px) {
+  .hero .wrap,
+  .prod {
+    grid-template-columns: 1fr;
+  }
+  section {
+    padding: 44px 0;
+  }
+  .hero .ph {
+    order: 2;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  * {
+    transition: none !important;
+  }
+}
