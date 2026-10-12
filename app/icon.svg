@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <defs>
+    <!-- Background Droplet Gradient -->
+    <linearGradient id="dropGrad" x1="16" y1="6" x2="48" y2="58" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#ff4d6d" />
+      <stop offset="45%" stop-color="#e4002b" />
+      <stop offset="100%" stop-color="#7a1236" />
+    </linearGradient>
+
+    <!-- Inner Glow / Highlight Gradient -->
+    <linearGradient id="shineGrad" x1="22" y1="12" x2="34" y2="30" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.9" />
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0" />
+    </linearGradient>
+
+    <!-- Gold Accent Gradient -->
+    <linearGradient id="goldGrad" x1="41" y1="14" x2="47" y2="24" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#ffb703" />
+      <stop offset="100%" stop-color="#e08a00" />
+    </linearGradient>
+
+    <!-- Soft Ambient Glow -->
+    <radialGradient id="heartGlow" cx="32" cy="36" r="16" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.35" />
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0" />
+    </radialGradient>
+
+    <!-- Drop Shadow Filter -->
+    <filter id="shadow" x="2" y="2" width="60" height="60" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="3" stdDeviation="2.5" flood-color="#4a0a22" flood-opacity="0.45" />
+    </filter>
+  </defs>
+
+  <!-- Droplet Body with Shadow -->
+  <path d="M32 4C32 4 12 28 12 42C12 53.6 21 60 32 60C43 60 52 53.6 52 42C52 28 32 4 32 4Z" 
+        fill="url(#dropGrad)" 
+        filter="url(#shadow)" />
+
+  <!-- Heart Glow Aura -->
+  <circle cx="32" cy="36" r="14" fill="url(#heartGlow)" />
+
+  <!-- Heart Outer Rim (Crisp White Accent) -->
+  <path d="M32 48L30.2 46.4C23.2 40.1 18.5 35.8 18.5 30.5C18.5 26.2 21.8 23 26 23C28.4 23 30.7 24.1 32 25.8C33.3 24.1 35.6 23 38 23C42.2 23 45.5 26.2 45.5 30.5C45.5 35.8 40.8 40.1 33.8 46.4L32 48Z" 
+        fill="#ffffff" 
+        fill-opacity="0.95" />
+
+  <!-- Heart Center (Rich Wine/Crimson) -->
+  <path d="M32 45.6L30.6 44.3C24.4 38.7 20.5 35 20.5 30.8C20.5 27.4 23.1 24.8 26.4 24.8C28.4 24.8 30.4 25.8 32 27.3C33.6 25.8 35.6 24.8 37.6 24.8C40.9 24.8 43.5 27.4 43.5 30.8C43.5 35 39.6 38.7 33.4 44.3L32 45.6Z" 
+        fill="url(#dropGrad)" />
+
+  <!-- Glossy 3D Highlight Pill -->
+  <ellipse cx="23" cy="20" rx="3.5" ry="7" transform="rotate(-32 23 20)" fill="url(#shineGrad)" />
+
+  <!-- Golden Sparkle Twinkle -->
+  <path d="M43 14L44.2 17.8L48 19L44.2 20.2L43 24L41.8 20.2L38 19L41.8 17.8L43 14Z" fill="url(#goldGrad)" />
+</svg>

@@ -17,6 +17,8 @@ export default function Variants() {
               width={variants.image.width}
               height={variants.image.height}
               alt={variants.image.alt}
+              loading="lazy"
+              sizes="(max-width: 1040px) 100vw, 1040px"
               style={{ width: "100%", height: "auto", display: "block" }}
             />
           </div>
