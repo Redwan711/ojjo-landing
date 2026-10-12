@@ -1,19 +1,22 @@
+import Image from "next/image";
 import { siteConfig } from "../data/content";
-import ProductImage from "./ProductImage";
 
 export default function Hero() {
   const { hero, affiliateUrl } = siteConfig;
 
   return (
-    <section className="hero" aria-labelledby="h1">
+    <header className="hero" id="top">
       <div className="wrap">
         <div>
-          <p className="eyebrow">{hero.eyebrow}</p>
-          <h1 id="h1">{hero.heading}</h1>
-          {hero.paragraphs.map((p, idx) => (
-            <p key={idx}>{p}</p>
-          ))}
+          <span className="badge">{hero.badge}</span>
+          <h1>{hero.heading}</h1>
+          <p>{hero.paragraph}</p>
+          <p className="tag">{hero.tag}</p>
+          <p className="ptitle">{hero.productTitle}</p>
           <p>
+            <span className="badge">{hero.authBadge}</span>
+          </p>
+          <p style={{ marginTop: "20px" }}>
             <a
               className="btn cta"
               href={affiliateUrl}
@@ -23,16 +26,23 @@ export default function Hero() {
               {hero.ctaText}
             </a>
           </p>
+          <ul className="pills">
+            {hero.pills.map((pill, index) => (
+              <li key={index}>{pill}</li>
+            ))}
+          </ul>
           <p className="mu">{hero.microcopy}</p>
         </div>
-        <ProductImage
-          src={hero.image.src}
-          alt={hero.image.alt}
-          width={hero.image.width}
-          height={hero.image.height}
-          priority={true}
-        />
+        <div className="himg">
+          <Image
+            src={hero.image.src}
+            width={hero.image.width}
+            height={hero.image.height}
+            alt={hero.image.alt}
+            priority
+          />
+        </div>
       </div>
-    </section>
+    </header>
   );
 }

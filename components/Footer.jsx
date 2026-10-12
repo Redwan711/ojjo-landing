@@ -7,13 +7,13 @@ export default function Footer() {
     <footer>
       <div className="wrap">
         <p>
-          <strong>Affiliate disclosure:</strong> {footer.affiliateDisclosure.replace("Affiliate disclosure: ", "")}
+          <strong>অ্যাফিলিয়েট ডিসক্লোজার:</strong> {footer.affiliateDisclosure.replace(/^অ্যাফিলিয়েট ডিসক্লোজার:\s*/, "")}
         </p>
-        <p>{footer.disclaimer}</p>
+        <p>{footer.medicalDisclaimer}</p>
         <p>
-          {footer.links.map((link, idx) => (
-            <a key={idx} href={link.url}>
-              {link.label}
+          {footer.links.map((link, index) => (
+            <a key={index} href={link.href}>
+              {link.text}
             </a>
           ))}
         </p>

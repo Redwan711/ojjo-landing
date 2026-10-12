@@ -4,12 +4,12 @@ export default function FinalCta() {
   const { finalCta, affiliateUrl } = siteConfig;
 
   return (
-    <section aria-labelledby="h-final">
+    <section>
       <div className="wrap">
         <div className="final">
-          <h2 id="h-final">{finalCta.heading}</h2>
-          <p>{finalCta.description}</p>
-          <p>
+          <h2>{finalCta.heading}</h2>
+          <p>{finalCta.paragraph}</p>
+          <p style={{ marginTop: "20px" }}>
             <a
               className="btn cta"
               href={affiliateUrl}
@@ -19,7 +19,9 @@ export default function FinalCta() {
               {finalCta.ctaText}
             </a>
           </p>
-          <p className="mu">{finalCta.microcopy}</p>
+          <p style={{ opacity: 0.85, fontSize: "0.92rem" }}>
+            {finalCta.subtext}
+          </p>
         </div>
       </div>
     </section>

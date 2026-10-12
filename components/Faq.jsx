@@ -15,30 +15,27 @@ export default function Faq() {
   };
 
   return (
-    <section className="alt" aria-labelledby="h-faq">
-      <div className="wrap" style={{ maxWidth: "760px" }}>
-        <h2 id="h-faq">{faq.heading}</h2>
+    <section className="alt">
+      <div className="wrap" style={{ maxWidth: "780px" }}>
+        <h2>{faq.heading}</h2>
         {faq.items.map((item) => {
           const isOpen = !!openItems[item.id];
-          const qId = `q${item.id}`;
-          const aId = `a${item.id}`;
-
           return (
-            <div className="faq" key={item.id}>
+            <div key={item.id} className="faq">
               <button
                 type="button"
-                id={qId}
                 aria-expanded={isOpen}
-                aria-controls={aId}
+                aria-controls={item.id}
+                id={item.btnId}
                 onClick={() => toggleItem(item.id)}
               >
                 {item.question}
               </button>
               <div
                 className="a"
-                id={aId}
+                id={item.id}
                 role="region"
-                aria-labelledby={qId}
+                aria-labelledby={item.btnId}
                 hidden={!isOpen}
               >
                 <p>{item.answer}</p>

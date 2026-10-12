@@ -1,181 +1,274 @@
 export const siteConfig = {
-  title: "Personal Lubricating Gel for Comfort | Intimate Lubricant Guide",
+  title: "Durex Play Lube বাংলাদেশ | Intimate Lubricant Gel",
   description:
-    "Learn how a personal lubricating gel may help with dryness and friction-related discomfort, how to choose a water-based or silicone-based lubricant, and view product details.",
-  canonicalUrl: "[CANONICAL_URL]",
-  affiliateUrl: "[AFFILIATE_URL]",
-  
-  header: {
-    badge: "Intimate Comfort Guide",
-  },
+    "ঘনিষ্ঠ মুহূর্তে শুষ্কতা ও ঘর্ষণজনিত অস্বস্তি কমাতে জানুন Durex Play Lube-এর উপকারিতা, ব্যবহারবিধি, ডেলিভারি ও অর্ডার করার বিস্তারিত।",
+  canonicalUrl: "https://[YOUR_DOMAIN]/durex-play-lube-bangladesh/",
+  affiliateUrl: "https://www.daraz.com.bd/", // Centralized affiliate / product link
+  privacyPolicyUrl: "#privacy-policy",
+  affiliateDisclosureUrl: "#affiliate-disclosure",
+  contactUrl: "#contact",
 
   hero: {
-    eyebrow: "For adults 18+",
-    heading: "Feel More Comfortable. Enjoy Intimacy with Confidence.",
-    paragraphs: [
-      "Dryness and friction can make intimate moments less comfortable. A suitable personal lubricating gel may help reduce friction and add moisture when natural lubrication isn't enough.",
-      "Explore a personal lubricant and see how its product details match what you need.",
-    ],
-    ctaText: "Check Price & Availability",
-    microcopy:
-      "Discreet, informative and judgment-free. Always read the product label and instructions before use.",
+    badge: "১৮+ প্রাপ্তবয়স্কদের জন্য",
+    heading: "একান্ত মুহূর্তে স্বাচ্ছন্দ্য কমে যাচ্ছে? ফিরে আসুক চেনা ঘনিষ্ঠতা",
+    paragraph:
+      "ভালোবাসা আছে, আকাঙ্ক্ষা আছে, তবু শুষ্কতা ও ঘর্ষণজনিত অস্বস্তি কি আপনাদের একান্ত মুহূর্তে বাধা হয়ে দাঁড়াচ্ছে? বয়স বা সম্পর্কের দৈর্ঘ্য নয়, গুরুত্বপূর্ণ হলো দুজনের স্বাচ্ছন্দ্য।",
+    tag: "আরাম, নিরাপত্তা আর আত্মবিশ্বাস, সবকিছু এক জেলে। ওয়াটার-বেসড ফর্মুলার স্মুথ ও আরামদায়ক ইনটিমেসি লুব্রিকেন্ট।",
+    productTitle: "Durex Play Lube 100ml / 50ml | Glycerin / Water-based",
+    authBadge: "100% Authentic (Imported Product)",
+    ctaText: "পণ্যের বিস্তারিত ও মূল্য দেখুন",
+    pills: ["বাসায় বসে অর্ডার", "Daraz-এর মাধ্যমে", "ব্র্যান্ডেড পণ্য"],
+    microcopy: "মূল্য, প্রাপ্যতা ও ডেলিভারি চার্জ জানতে বাটনে ক্লিক করুন।",
     image: {
-      src: "/images/product-bottle.jpg",
-      fallbackSrc: "[PRODUCT_IMAGE_URL]",
-      alt: "Personal lubricating gel product bottle, front view",
-      width: 520,
-      height: 520,
+      src: "/images/hero-lube.jpg",
+      alt: "Durex Play Lube জেলের টিউব",
+      width: 380,
+      height: 507,
     },
   },
 
-  benefits: {
-    heading: "Why Lubricating Gel May Be Helpful",
+  variants: {
+    heading: "আপনার জন্য কোন ভ্যারিয়েন্ট?",
     microcopy:
-      "A personal lubricant isn't necessary for everyone, and it doesn't address the underlying cause of persistent dryness. For many people, it can be a practical comfort option.",
+      "Durex-এর জনপ্রিয় লুব্রিকেন্ট ভ্যারিয়েন্টগুলো। Daraz লিস্টিংয়ে কোনটি আছে, তা দেখে নিন।",
     items: [
-      "Helps reduce friction during intimate activity",
-      "May help relieve dryness-related discomfort",
-      "Can make intimate experiences more comfortable",
-      "Provides additional moisture when natural lubrication is insufficient",
-      "Offers an option for temporary or recurring dryness",
+      {
+        id: "c1",
+        name: "Real Feel",
+        desc: "৩ গুণ দীর্ঘস্থায়ী লুব্রিকেশন",
+        base: "Silicone-based",
+        condom: "চার্ট অনুযায়ী ✓",
+      },
+      {
+        id: "c2",
+        name: "Naturals",
+        desc: "প্রাকৃতিক উপাদান",
+        base: "Water-based",
+        condom: "চার্ট অনুযায়ী ✓",
+      },
+      {
+        id: "c3",
+        name: "Intense",
+        desc: "শীতল ও টিংলিং অনুভূতি",
+        base: "Water-based",
+        condom: "চার্ট অনুযায়ী ✓",
+      },
+      {
+        id: "c4",
+        name: "Sensual",
+        desc: "লুব + বডি ম্যাসাজ জেল",
+        base: "Water-based",
+        condom: "চার্ট অনুযায়ী ✓",
+      },
+      {
+        id: "c5",
+        name: "Strawberry / Cherry",
+        desc: "ফ্লেভারড",
+        base: "Water-based",
+        condom: "চার্ট অনুযায়ী ✓",
+      },
+    ],
+    note: 'সব ভ্যারিয়েন্টে "Intimate Area Lubrication" সুবিধা রয়েছে। কেনার আগে আপনার ভ্যারিয়েন্টের প্যাকেটের তথ্য দেখে নিন।',
+  },
+
+  whyCouples: {
+    heading: "কেন দম্পতিদের লুব্রিকেন্টের কথা বিবেচনা করা উচিত?",
+    paragraph:
+      "দাম্পত্য জীবনে ঘনিষ্ঠতার অনুভূতিকে আরও স্মুথ, আরামদায়ক ও উপভোগ্য করে তুলতে লুব্রিকেন্ট (Personal Lubricant) সহায়ক হতে পারে। এটি এমন একটি বিশেষ জেল বা তরল, যা দম্পতিদের ঘনিষ্ঠ মুহূর্তে আরও মসৃণ ও স্বাচ্ছন্দ্যময় অনুভূতি পেতে সাহায্য করে।",
+    ticks: [
+      {
+        bold: "শুষ্কতায় বাড়তি যত্ন:",
+        text: "প্রয়োজনীয় আর্দ্রতা যোগাতে সাহায্য করে।",
+      },
+      {
+        bold: "ঘর্ষণজনিত অস্বস্তি কমাতে সহায়ক:",
+        text: "অতিরিক্ত ঘর্ষণ কমাতে সাহায্য করতে পারে।",
+      },
+      {
+        bold: "আরও স্বাচ্ছন্দ্যপূর্ণ অভিজ্ঞতা:",
+        text: "অস্বস্তির বদলে পারস্পরিক স্বাচ্ছন্দ্যকে গুরুত্ব দিন।",
+      },
+      {
+        bold: "বয়সের সঙ্গে মানিয়ে নেওয়া:",
+        text: "শরীরের প্রয়োজন বদলাতে পারে, ব্যক্তিগত যত্নও প্রয়োজন অনুযায়ী বদলাতে পারে।",
+      },
+      {
+        bold: "খোলামেলা যোগাযোগ:",
+        text: "একে অপরের প্রয়োজন বোঝা ও সম্মান করার অভ্যাস গড়ে তুলুন।",
+      },
     ],
   },
 
-  product: {
-    eyebrow: "Product Details",
-    name: "[PRODUCT_NAME]",
-    description:
-      "[PRODUCT_SHORT_DESCRIPTION]. Always check the manufacturer's label for full ingredients and directions.",
+  whatIs: {
+    heading:
+      "Durex Play Lube কী এবং কীভাবে আপনার ঘনিষ্ঠতার মুহূর্তকে আরও স্মুথ করে তুলতে পারে?",
+    paragraph:
+      "দাম্পত্য জীবনের বিশেষ মুহূর্তগুলো হোক আরও মসৃণ, আরামদায়ক ও উপভোগ্য! ❤️ Durex Play Lube ব্যক্তিগত ঘনিষ্ঠতার জন্য তৈরি একটি লুব্রিকেন্ট জেল, যা অতিরিক্ত আর্দ্রতা যোগ করে ঘনিষ্ঠতার অনুভূতিকে আরও স্মুথ ও স্বাচ্ছন্দ্যময় করতে সাহায্য করে।",
     image: {
-      src: "/images/product-bottle.jpg",
-      fallbackSrc: "[PRODUCT_IMAGE_URL]",
-      alt: "[PRODUCT_NAME] personal lubricating gel packaging",
+      src: "/images/durex-range.jpg",
+      alt: "Durex লুব্রিকেন্ট ভ্যারিয়েন্টের সংগ্রহ",
       width: 520,
-      height: 520,
+      height: 390,
     },
-    specs: [
-      { label: "Product type", value: "[WATER_BASED / SILICONE_BASED / OTHER]" },
-      { label: "Size / volume", value: "[PRODUCT_SIZE]" },
-      { label: "Suitable use", value: "[VERIFIED_USE_CASES]" },
-    ],
-    ctaText: "Check Price & Availability",
   },
 
-  features: {
-    heading: "Five Key Features to Look For",
-    microcopy:
-      "Details below are placeholders. Replace them only with information from the product label or manufacturer.",
-    items: [
+  comparison: {
+    heading: "বাজারের সব লুব্রিকেন্ট এক রকম নয়!",
+    paragraph:
+      "বাজারে অনেক ধরনের লুব্রিকেন্ট থাকলেও সব পণ্যের গুণগত মান ও উপাদান এক নয়। তাই দাম্পত্য ঘনিষ্ঠতার স্বাচ্ছন্দ্য ও ব্যক্তিগত নিরাপত্তার কথা বিবেচনা করে বেছে নিন বিশ্বস্ত উৎস থেকে কোনো অথেনটিক লুব্রিকেন্ট।",
+    subheading: "যে কারণে Durex Play Lube জেল আলাদা",
+    ticks: [
       {
-        icon: "Droplets",
-        title: "Moisture & comfort",
-        description: "[VERIFIED_MOISTURE_COMFORT_INFO]",
+        bold: "আল্ট্রা স্মুথ টেক্সচার:",
+        text: "দীর্ঘসময় আরামদায়ক অনুভূতি।",
       },
       {
-        icon: "Layers",
-        title: "Texture & application",
-        description: "[VERIFIED_TEXTURE_INFO]",
+        bold: "ওয়াটার-বেসড ফর্মুলা:",
+        text: "সহজে পরিষ্কার হয়, দাগ পড়ে না (পানি-ভিত্তিক ভ্যারিয়েন্টের ক্ষেত্রে)।",
       },
       {
-        icon: "FlaskConical",
-        title: "Formulation",
-        description: "[VERIFIED_FORMULATION_INFO]",
+        bold: "ত্বক-বান্ধব ফর্মুলা:",
+        text: "তবুও সংবেদনশীল ত্বক হলে ব্যবহারের আগে উপাদান দেখে নিন।",
       },
       {
-        icon: "Sparkles",
-        title: "Cleanup & convenience",
-        description: "[VERIFIED_CLEANUP_INFO]",
-      },
-      {
-        icon: "ShieldCheck",
-        title: "Compatibility & intended use",
-        description: "[VERIFIED_COMPATIBILITY_INFO]",
+        bold: "ভ্যারিয়েন্ট অনুযায়ী গন্ধ/স্বাদ আলাদা:",
+        text: "গন্ধহীন বা ফ্লেভারড, প্যাকেটের তথ্য দেখে বেছে নিন।",
       },
     ],
   },
 
-  guide: {
-    heading: "How to Choose the Right Lubricating Gel",
-    items: [
+  privacy: {
+    heading: "গোপনীয়তা আপনার অধিকার 🔒",
+    p1: "আপনার ব্যক্তিগত পছন্দ ও গোপনীয়তাকে আমরা সর্বোচ্চ গুরুত্ব দিই। কেনাকাটার অভিজ্ঞতা হওয়া উচিত সম্মানজনক ও বিব্রতকর পরিস্থিতিমুক্ত। অর্ডারের আগে বিক্রেতার প্যাকেজিং ও ডেলিভারি তথ্য দেখে নিন, যাতে প্যাকেজিংয়ে পণ্যের পরিচয় প্রকাশ না পায়।",
+    p2: "আপনার গোপনীয়তা সুরক্ষিত থাকুক, নিশ্চিন্তে অর্ডার করুন। ❤️",
+  },
+
+  daraz: {
+    heading: "Daraz-এর মাধ্যমে অর্ডার করুন",
+    paragraph:
+      "পণ্যের বিস্তারিত, মূল্য, বিক্রেতার তথ্য, ক্রেতাদের রিভিউ এবং প্রযোজ্য ডেলিভারি ও রিটার্নের শর্ত যাচাই করে পণ্যটি নির্বাচন করুন।",
+    ticks: [
+      "বিক্রেতার রেটিং ও ক্রেতাদের অভিজ্ঞতা দেখুন।",
+      "সঠিক ভ্যারিয়েন্ট ও পরিমাণ দেখে অর্ডার করুন।",
+      "পণ্যের সঠিক মূল্য ও ডেলিভারি চার্জ দেখে নিন।",
+      "প্রযোজ্য রিটার্ন বা রিফান্ড নীতিমালা অর্ডারের আগে জেনে নিন।",
+    ],
+    ctaText: "Daraz-এ বর্তমান মূল্য দেখুন",
+  },
+
+  howToUse: {
+    heading: "কীভাবে ব্যবহার করবেন? 💧",
+    intro:
+      "Durex Play Lube ব্যবহার করা সহজ। সঠিকভাবে ব্যবহারের জন্য ধাপগুলো অনুসরণ করুন:",
+    steps: [
       {
-        title: "Water-based vs. silicone-based",
-        description:
-          "Water-based lubricants are generally easy to wash off. Silicone-based ones usually last longer but can be harder to clean off. Check which type your product is.",
+        bold: "হাত পরিষ্কার করুন:",
+        text: "ব্যবহারের আগে ভালোভাবে হাত ধুয়ে নিন।",
       },
       {
-        title: "Ingredient sensitivity",
-        description:
-          "Fragrances, flavors, or other additives can irritate some people. Review the ingredient list, and stop use if irritation occurs.",
+        bold: "অল্প পরিমাণ নিন:",
+        text: "প্রয়োজন অনুযায়ী অল্প পরিমাণ লুব্রিকেন্ট হাতে নিন।",
       },
       {
-        title: "Read the instructions",
-        description:
-          "Directions, storage, and intended use vary by product. Follow the manufacturer's guidance.",
+        bold: "প্রয়োগ করুন:",
+        text: "পণ্যের নির্দেশনা অনুযায়ী ব্যবহার করুন।",
       },
       {
-        title: "Check compatibility",
-        description:
-          "Verify that the product suits condoms and any intimate devices you use. This depends on the formulation.",
+        bold: "প্রয়োজনে আরও ব্যবহার করুন:",
+        text: "পর্যাপ্ত স্মুথ অনুভূতি বজায় রাখতে প্রয়োজনে আরও কিছুটা যোগ করুন।",
       },
       {
-        title: "When to seek advice",
-        description:
-          "If dryness is persistent, painful, or unexplained, consider speaking with a healthcare professional.",
+        bold: "কনডমের সামঞ্জস্য যাচাই করুন:",
+        text: "লুব্রিকেন্টটি আপনার ব্যবহৃত কনডমের উপাদানের সঙ্গে সামঞ্জস্যপূর্ণ কি না, প্যাকেটের নির্দেশনা দেখে নিশ্চিত হোন।",
+      },
+      {
+        bold: "অস্বস্তি হলে ব্যবহার বন্ধ করুন:",
+        text: "জ্বালাপোড়া, চুলকানি বা অস্বাভাবিক অস্বস্তি হলে ব্যবহার বন্ধ করুন।",
       },
     ],
+    note: {
+      bold: "ছোট্ট টিপস:",
+      text: "প্রথমবার অল্প পরিমাণ দিয়ে শুরু করুন এবং দুজনের স্বাচ্ছন্দ্যকে গুরুত্ব দিন। নির্দিষ্ট ভ্যারিয়েন্টের প্যাকেটের নির্দেশনা অনুসরণ করুন। শুষ্কতা নিয়মিত হলে বা ব্যথা থাকলে চিকিৎসকের পরামর্শ নিন।",
+    },
   },
 
   faq: {
-    heading: "Frequently Asked Questions",
+    heading: "সচরাচর জিজ্ঞাসা (FAQ)",
     items: [
       {
-        id: "1",
-        question: "What is lubricating gel used for?",
+        id: "a1",
+        btnId: "q1",
+        question: "লুব্রিকেন্ট জেল কী?",
         answer:
-          "It is commonly used to add moisture and reduce friction during intimate activity. Some people use it for occasional dryness; others use it more regularly.",
+          "এটি এমন পণ্য, যা ঘনিষ্ঠতার সময় অতিরিক্ত পিচ্ছিলতা যোগাতে এবং ঘর্ষণজনিত অস্বস্তি কমাতে সাহায্য করে।",
       },
       {
-        id: "2",
-        question: "What is the difference between water-based and silicone-based lubricant?",
+        id: "a2",
+        btnId: "q2",
+        question: "Durex Play Lube কি শুধু তরুণ দম্পতিদের জন্য?",
         answer:
-          "Water-based formulas are typically easier to wash away and are a common choice for general use. Silicone-based formulas generally last longer but may be harder to clean. Compatibility with other products varies, so check the label.",
+          "না। প্রাপ্তবয়স্কদের মধ্যে যাঁদের প্রয়োজন আছে, তাঁরা পণ্যের নির্দেশনা ও উপযোগিতা যাচাই করে এটি বিবেচনা করতে পারেন।",
       },
       {
-        id: "3",
-        question: "Is lubricating gel safe for sensitive skin?",
+        id: "a3",
+        btnId: "q3",
+        question: "৩৫–৫৫ বছর বয়সীদের জন্য কি লুব্রিকেন্ট উপকারী হতে পারে?",
         answer:
-          "It depends on the formulation and the individual. Some ingredients may irritate sensitive skin. Check the ingredient list, consider a small patch test, and stop use if you notice irritation. Ask a healthcare professional if you have concerns.",
+          "শুষ্কতা বা ঘর্ষণজনিত অস্বস্তি থাকলে উপযুক্ত লুব্রিকেন্ট সাহায্য করতে পারে। তবে স্থায়ী ব্যথা বা নতুন কোনো উপসর্গ থাকলে চিকিৎসকের পরামর্শ নিন।",
       },
       {
-        id: "4",
-        question: "Can lubricating gel be used with condoms?",
+        id: "a4",
+        btnId: "q4",
+        question: "এটি কি কনডমের সঙ্গে ব্যবহার করা যায়?",
         answer:
-          "Compatibility varies by product and condom material. Water-based lubricants are commonly used with latex condoms, but always confirm on the product label before use.",
+          "নির্দিষ্ট ভ্যারিয়েন্টের নির্দেশনা যাচাই করুন। বিশেষ করে ল্যাটেক্স কনডমের ক্ষেত্রে তেল-ভিত্তিক পণ্য ব্যবহার করা উচিত নয়, কারণ তা ল্যাটেক্স দুর্বল করতে পারে।",
       },
       {
-        id: "5",
-        question: "How do I choose the right lubricating gel?",
+        id: "a5",
+        btnId: "q5",
+        question: "পণ্যটি কি গোপনীয়ভাবে ডেলিভারি করা হয়?",
         answer:
-          "Consider the type (water- or silicone-based), ingredients, any sensitivities, and compatibility with condoms or devices you use. Read the instructions, and choose a product from a source you trust.",
+          "প্যাকেজিংয়ের ধরন ও গোপনীয়তার ব্যবস্থা বিক্রেতার কাছে নিশ্চিত করুন। নিশ্চিত না হয়ে নির্দিষ্ট গোপনীয়তার নিশ্চয়তা দেওয়া ঠিক নয়।",
+      },
+      {
+        id: "a6",
+        btnId: "q6",
+        question: "পছন্দ না হলে কি রিফান্ড পাওয়া যাবে?",
+        answer:
+          "রিটার্ন বা রিফান্ডের যোগ্যতা পণ্যের ধরন ও Daraz-এর প্রযোজ্য নীতিমালার ওপর নির্ভর করে। অর্ডারের আগে পণ্যের পেজে দেওয়া শর্ত যাচাই করুন।",
+      },
+      {
+        id: "a7",
+        btnId: "q7",
+        question: "কোথা থেকে অর্ডার করব?",
+        answer:
+          "এই পেজের অর্ডার বাটনে ক্লিক করে Daraz-এর পণ্য পেজে গিয়ে বর্তমান মূল্য, বিক্রেতার তথ্য, ভ্যারিয়েন্ট ও ডেলিভারি শর্ত যাচাই করুন।",
       },
     ],
   },
 
   finalCta: {
-    heading: "Comfort Is Worth Taking Seriously",
-    description: "A suitable lubricant may help make intimacy feel easier and more comfortable.",
-    ctaText: "Check Price & Availability",
-    microcopy: "You'll go to the seller's website. Please review the product details before you decide.",
+    heading: "স্বাচ্ছন্দ্যকে গুরুত্ব দিন, ভালোবাসার মুহূর্তগুলোকে নয়",
+    paragraph:
+      "আপনার প্রয়োজনের সঙ্গে মানানসই ভ্যারিয়েন্ট বেছে নিন, আর অর্ডারের আগে মূল্য, বিক্রেতা ও ডেলিভারির তথ্য যাচাই করুন।",
+    ctaText: "পণ্যের বিস্তারিত দেখুন ও অর্ডার করুন",
+    subtext: "আপনার ব্যক্তিগত যত্ন, আপনার সিদ্ধান্ত।",
   },
 
   footer: {
     affiliateDisclosure:
-      "Affiliate disclosure: This page contains affiliate links. If you purchase through our links, we may earn a commission at no additional cost to you.",
-    disclaimer: "This page is for general information only and is not medical advice. For adults 18+.",
+      "অ্যাফিলিয়েট ডিসক্লোজার: এই পেজে অ্যাফিলিয়েট লিংক আছে। আমাদের লিংক দিয়ে কেনাকাটা করলে আপনার কোনো বাড়তি খরচ ছাড়াই আমরা কমিশন পেতে পারি। আমরা Durex বা Daraz-এর অফিশিয়াল প্রতিনিধি নই।",
+    medicalDisclaimer:
+      "এই পেজের তথ্য সাধারণ জ্ঞানের জন্য, চিকিৎসা পরামর্শ নয়। শুধুমাত্র ১৮+ প্রাপ্তবয়স্কদের জন্য।",
     links: [
-      { label: "Privacy Policy", url: "[PRIVACY_POLICY_URL]" },
-      { label: "Affiliate Disclosure", url: "[AFFILIATE_DISCLOSURE_URL]" },
-      { label: "Contact Us", url: "[CONTACT_URL]" },
+      { text: "প্রাইভেসি পলিসি", href: "[PRIVACY_POLICY_URL]" },
+      { text: "অ্যাফিলিয়েট ডিসক্লোজার", href: "[AFFILIATE_DISCLOSURE_URL]" },
+      { text: "যোগাযোগ", href: "[CONTACT_URL]" },
     ],
+  },
+
+  sticky: {
+    label: "Durex Play Lube | Daraz-এ মূল্য দেখুন",
+    ctaText: "মূল্য ও অর্ডার দেখুন",
   },
 };
