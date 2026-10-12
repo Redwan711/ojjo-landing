@@ -10,7 +10,6 @@ export default function Hero() {
         <div>
           <span className="badge">{hero.badge}</span>
           <h1>{hero.heading}</h1>
-          <p>{hero.paragraph}</p>
           <p className="tag">{hero.tag}</p>
           <p className="ptitle">{hero.productTitle}</p>
           <p>

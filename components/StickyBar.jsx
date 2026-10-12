@@ -47,7 +47,7 @@ export default function StickyBar() {
       id="sticky"
       aria-hidden={!isVisible}
     >
-      <span>{sticky.label}</span>
+      <span className="sticky-label">{sticky.label}</span>
       <a
         className="btn cta"
         href={affiliateUrl}

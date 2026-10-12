@@ -872,8 +872,12 @@ footer a:hover {
   transform: none;
 }
 
-.sticky span {
+.sticky .sticky-label {
   font-weight: 700;
+}
+
+.sticky .btn .btn-text {
+  display: inline-block !important;
 }
 
 html,
@@ -951,7 +955,7 @@ body {
   section {
     padding: 42px 0;
   }
-  .sticky span {
+  .sticky .sticky-label {
     display: none;
   }
   .sticky .btn {
