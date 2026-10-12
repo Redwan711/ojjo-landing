@@ -1,5 +1,7 @@
 import "./globals.css";
 import { siteConfig } from "../data/content";
+import { PostHogProvider } from "./PostHogProvider";
+import PostHogPageView from "./PostHogPageView";
 
 export const metadata = {
   metadataBase: new URL("https://durexplaylube.com"),
@@ -116,7 +118,12 @@ export default function RootLayout({ children }) {
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
       </head>
-      <body>{children}</body>
+      <body>
+        <PostHogProvider>
+          <PostHogPageView />
+          {children}
+        </PostHogProvider>
+      </body>
     </html>
   );
 }
