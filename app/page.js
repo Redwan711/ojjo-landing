@@ -5,6 +5,7 @@ import WhatIs from "../components/WhatIs";
 import WhyDurex from "../components/WhyDurex";
 import Privacy from "../components/Privacy";
 import DarazOrder from "../components/DarazOrder";
+import Reviews from "../components/Reviews";
 import HowToUse from "../components/HowToUse";
 import Faq from "../components/Faq";
 import FinalCta from "../components/FinalCta";
@@ -22,6 +23,7 @@ export default function Home() {
         <WhyDurex />
         <Privacy />
         <DarazOrder />
+        <Reviews />
         <HowToUse />
         <Faq />
         <FinalCta />

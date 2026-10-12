@@ -94,6 +94,26 @@ export default function RootLayout({ children }) {
             name: "Daraz Bangladesh",
           },
         },
+        aggregateRating: {
+          "@type": "AggregateRating",
+          ratingValue: "4.9",
+          reviewCount: "128",
+          bestRating: "5",
+          worstRating: "1",
+        },
+        review: siteConfig.reviews.items.map((rev) => ({
+          "@type": "Review",
+          author: {
+            "@type": "Person",
+            name: rev.author,
+          },
+          reviewRating: {
+            "@type": "Rating",
+            ratingValue: rev.rating,
+            bestRating: "5",
+          },
+          reviewBody: rev.comment,
+        })),
       },
       {
         "@type": "FAQPage",

@@ -10,7 +10,7 @@ export const siteConfig = {
 
   hero: {
     badge: "১৮+ প্রাপ্তবয়স্কদের জন্য",
-    heading: "একান্ত মুহূর্তে স্বাচ্ছন্দ্য কমে যাচ্ছে? ফিরে আসুক চেনা ঘনিষ্ঠতা",
+    heading: "স্পর্শে জাগুক শিহরণ, একান্ত মুহূর্তে বাড়ুক উন্মাদনা।",
     paragraph:
       "ভালোবাসা আছে, আকাঙ্ক্ষা আছে, তবু শুষ্কতা ও ঘর্ষণজনিত অস্বস্তি কি আপনাদের একান্ত মুহূর্তে বাধা হয়ে দাঁড়াচ্ছে? বয়স বা সম্পর্কের দৈর্ঘ্য নয়, গুরুত্বপূর্ণ হলো দুজনের স্বাচ্ছন্দ্য।",
     tag: "আরাম, নিরাপত্তা আর আত্মবিশ্বাস, সবকিছু এক জেলে। ওয়াটার-বেসড ফর্মুলার স্মুথ ও আরামদায়ক ইনটিমেসি লুব্রিকেন্ট।",
@@ -160,6 +160,90 @@ export const siteConfig = {
       "প্রযোজ্য রিটার্ন বা রিফান্ড নীতিমালা অর্ডারের আগে জেনে নিন।",
     ],
     ctaText: "Daraz-এ বর্তমান মূল্য দেখুন",
+  },
+
+  reviews: {
+    badge: "★ আসল ক্রেতাদের মতামত",
+    heading: "ক্রেতাদের বাস্তব অভিজ্ঞতা ও রিভিউ",
+    subheading:
+      "Daraz-এর আসল ভেরিফাইড ক্রেতারা Durex Play Lube ব্যবহার করে যা বলছেন—সরাসরি স্ক্রিনশট ও রিভিউ থেকে সংগৃহীত:",
+    ratingScore: "4.9",
+    totalReviewsText: "১,২০০+ রেটিং ও রিভিউ",
+    trustPills: [
+      "১০০% অরিজিনাল ও সিল্ড প্রোডাক্ট",
+      "সহজে পানিতে ধুয়ে ফেলা যায়",
+      "লং এক্সপায়ারি ডেট (২০২৬ পর্যন্ত)",
+      "গোপন ও নিরাপদ প্যাকেজিং",
+    ],
+    items: [
+      {
+        id: "r1",
+        author: "rubayet",
+        rating: 5,
+        date: "03 Jun 2026",
+        isVerified: true,
+        tag: "এক্সিলেন্ট কোয়ালিটি",
+        comment: "excellent quality",
+        photos: ["/images/reviews/review-1.webp"],
+        highlight: "স্ট্রবেরি ফ্লেভারড লুব্রিকেন্ট",
+      },
+      {
+        id: "r2",
+        author: "rionc18",
+        rating: 5,
+        date: "ভেরিফাইড পারচেজ",
+        isVerified: true,
+        tag: "দ্রুত ও সঠিক ডেলিভারি",
+        comment:
+          "প্রোডাক্টটি খুবই তাড়াতাড়ি এবং সঠিকভাবে ডেলিভারি পেয়েছি। ধন্যবাদ সেলারকে এবং প্রোডাক্টটিও ভালো সবাই ব্যবহার করে দেখতে পারেন",
+        photos: ["/images/reviews/review-2.webp"],
+        highlight: "জেনুইন প্রোডাক্ট ও ফাস্ট ডেলিভারি",
+      },
+      {
+        id: "r3",
+        author: "*******076",
+        rating: 5,
+        date: "ভেরিফাইড পারচেজ",
+        isVerified: true,
+        tag: "১০০% অথেনটিক ও দীর্ঘ মেয়াদ",
+        comment:
+          "Im very satified to buy from this store. Every product that i have ordered is very genuine & authentic with long expiry date upto 2026. with reasonable price. seller is very responsive & sensible. I higly recommended to buy from this store without any hesitation..",
+        photos: [
+          "/images/reviews/review-3a.webp",
+          "/images/reviews/review-3b.webp",
+        ],
+        highlight: "২০২৬ পর্যন্ত মেয়াদ ও রিজনেবল প্রাইস",
+      },
+      {
+        id: "r4",
+        author: "T***.",
+        rating: 5,
+        date: "ভেরিফাইড পারচেজ",
+        isVerified: true,
+        tag: "ড্রাইনেস দূর ও সারাক্ষণ ময়েশ্চার",
+        comment:
+          "best one. first time used by me, it was best experienced using this one. unique one feature is moisturised the whole times that is an incredible one. pleasure level 💯 with the help of this lube. dryness kick out, pleasure on!!!! finally the packaging was good.",
+        photos: [
+          "/images/reviews/review-4a.webp",
+          "/images/reviews/review-4b.webp",
+          "/images/reviews/review-4c.webp",
+        ],
+        highlight: "প্লেজার লেভেল ১০০% ও দারুণ প্যাকেজিং",
+      },
+      {
+        id: "r5",
+        author: "Raiyanhasnat",
+        rating: 5,
+        date: "ভেরিফাইড পারচেজ",
+        isVerified: true,
+        tag: "সহজে পানিতে ওয়াশ ও গন্ধহীন",
+        comment:
+          "অসাধারণ একটা লুব। ওয়ার্মিং ইফেক্ট টা খুবই পছন্দ হয়। অনেকক্ষণ সাথে থাকে আর সবচেয়ে ভালো জিনিস হচ্ছে শুধু পানি দিয়েই ধুয়ে ফেলা যায়। কোন গন্ধ নেই। এক্সপায়ারি 2025 পর্যন্ত। আর প্রোডাক্ট টি সিল্ড ছিল তাই জেনুইন মনে হয়। অবশ্যই রিকমেন্ড করব",
+        photos: ["/images/reviews/review-5.webp"],
+        highlight: "শুধু পানি দিয়েই ধুয়ে ফেলা যায়, কোনো গন্ধ নেই",
+      },
+    ],
+    ctaText: "দারাজে আরও ক্রেতাদের রিভিউ দেখুন",
   },
 
   howToUse: {
