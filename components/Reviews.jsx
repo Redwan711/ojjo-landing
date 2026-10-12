@@ -74,8 +74,8 @@ export default function Reviews() {
 
         <div className="reviews-cta-box">
           <p className="reviews-cta-text">
-            সকল রিভিউ Daraz-এর ভেরিফاید ক্রেতাদের সরাসরি মতামত।
-            বর্তমান দাম, ভ্যারিয়েন্ট ও স্টক দেখতে নিচের বাটনে ক্লিক করুন:
+            সকল রিভিউ Daraz-এর ভেরিফাইড ক্রেতাদের সরাসরি মতামত।
+            বর্তমান দাম, ভ্যারিয়েন্ট ও স্টক দেখতে নিচের বাটনে ক্লিক করুন:
           </p>
           <p style={{ marginTop: "16px" }}>
             <a
