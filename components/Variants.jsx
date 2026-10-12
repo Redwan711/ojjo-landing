@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { siteConfig } from "../data/content";
 
 export default function Variants() {
@@ -8,6 +9,19 @@ export default function Variants() {
       <div className="wrap">
         <h2>{variants.heading}</h2>
         <p className="mu">{variants.microcopy}</p>
+
+        {variants.image && (
+          <div className="v-banner">
+            <Image
+              src={variants.image.src}
+              width={variants.image.width}
+              height={variants.image.height}
+              alt={variants.image.alt}
+              style={{ width: "100%", height: "auto", display: "block" }}
+            />
+          </div>
+        )}
+
         <div className="grid">
           {variants.items.map((item) => (
             <div key={item.id} className={`v ${item.id}`}>

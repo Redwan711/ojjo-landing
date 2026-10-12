@@ -3,7 +3,7 @@ export const siteConfig = {
   description:
     "ঘনিষ্ঠ মুহূর্তে শুষ্কতা ও ঘর্ষণজনিত অস্বস্তি কমাতে জানুন Durex Play Lube-এর উপকারিতা, ব্যবহারবিধি, ডেলিভারি ও অর্ডার করার বিস্তারিত।",
   canonicalUrl: "https://[YOUR_DOMAIN]/durex-play-lube-bangladesh/",
-  affiliateUrl: "https://www.daraz.com.bd/", // Centralized affiliate / product link
+  affiliateUrl: "https://s.daraz.com.bd/s.YcHGW",
   privacyPolicyUrl: "#privacy-policy",
   affiliateDisclosureUrl: "#affiliate-disclosure",
   contactUrl: "#contact",
@@ -18,10 +18,10 @@ export const siteConfig = {
     authBadge: "100% Authentic (Imported Product)",
     ctaText: "পণ্যের বিস্তারিত ও মূল্য দেখুন",
     pills: ["বাসায় বসে অর্ডার", "Daraz-এর মাধ্যমে", "ব্র্যান্ডেড পণ্য"],
-    microcopy: "মূল্য, প্রাপ্যতা ও ডেলিভারি চার্জ জানতে বাটনে ক্লিক করুন।",
+    microcopy: "সর্বোচ্চ গোপনীয়তা রক্ষা করে ডেলিভারি করা হয়।",
     image: {
-      src: "/images/hero-lube.jpg",
-      alt: "Durex Play Lube জেলের টিউব",
+      src: "/images/hero-strawberry.png",
+      alt: "Durex Play Lube স্ট্রবেরিতে জেল প্রয়োগ",
       width: 380,
       height: 507,
     },
@@ -31,7 +31,20 @@ export const siteConfig = {
     heading: "আপনার জন্য কোন ভ্যারিয়েন্ট?",
     microcopy:
       "Durex-এর জনপ্রিয় লুব্রিকেন্ট ভ্যারিয়েন্টগুলো। Daraz লিস্টিংয়ে কোনটি আছে, তা দেখে নিন।",
+    image: {
+      src: "/images/variants-banner.jpg",
+      alt: "Durex লুব্রিকেন্ট ভ্যারিয়েন্টের সমাহার",
+      width: 970,
+      height: 600,
+    },
     items: [
+      {
+        id: "c5",
+        name: "Strawberry / Cherry",
+        desc: "ফ্লেভারড",
+        base: "Water-based",
+        condom: "চার্ট অনুযায়ী ✓",
+      },
       {
         id: "c1",
         name: "Real Feel",
@@ -57,13 +70,6 @@ export const siteConfig = {
         id: "c4",
         name: "Sensual",
         desc: "লুব + বডি ম্যাসাজ জেল",
-        base: "Water-based",
-        condom: "চার্ট অনুযায়ী ✓",
-      },
-      {
-        id: "c5",
-        name: "Strawberry / Cherry",
-        desc: "ফ্লেভারড",
         base: "Water-based",
         condom: "চার্ট অনুযায়ী ✓",
       },
@@ -105,7 +111,7 @@ export const siteConfig = {
     paragraph:
       "দাম্পত্য জীবনের বিশেষ মুহূর্তগুলো হোক আরও মসৃণ, আরামদায়ক ও উপভোগ্য! ❤️ Durex Play Lube ব্যক্তিগত ঘনিষ্ঠতার জন্য তৈরি একটি লুব্রিকেন্ট জেল, যা অতিরিক্ত আর্দ্রতা যোগ করে ঘনিষ্ঠতার অনুভূতিকে আরও স্মুথ ও স্বাচ্ছন্দ্যময় করতে সাহায্য করে।",
     image: {
-      src: "/images/durex-range.jpg",
+      src: "/images/durex-collection.png",
       alt: "Durex লুব্রিকেন্ট ভ্যারিয়েন্টের সংগ্রহ",
       width: 520,
       height: 390,
@@ -269,6 +275,6 @@ export const siteConfig = {
 
   sticky: {
     label: "Durex Play Lube | Daraz-এ মূল্য দেখুন",
-    ctaText: "মূল্য ও অর্ডার দেখুন",
+    ctaText: "এখনই অর্ডার করুন",
   },
 };

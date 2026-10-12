@@ -14,6 +14,7 @@ export default function WhatIs() {
             height={whatIs.image.height}
             alt={whatIs.image.alt}
             loading="lazy"
+            style={{ width: "100%", height: "auto", objectFit: "contain" }}
           />
         </div>
         <div>

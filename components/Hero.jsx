@@ -40,6 +40,7 @@ export default function Hero() {
             height={hero.image.height}
             alt={hero.image.alt}
             priority
+            style={{ width: "100%", height: "100%", objectFit: "contain" }}
           />
         </div>
       </div>
