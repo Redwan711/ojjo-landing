@@ -2,6 +2,7 @@ import "./globals.css";
 import { siteConfig } from "../data/content";
 import { PostHogProvider } from "./PostHogProvider";
 import PostHogPageView from "./PostHogPageView";
+import { Analytics } from "@vercel/analytics/next";
 
 export const metadata = {
   metadataBase: new URL("https://durexplaylube.com"),
@@ -142,6 +143,7 @@ export default function RootLayout({ children }) {
         <PostHogProvider>
           <PostHogPageView />
           {children}
+          <Analytics />
         </PostHogProvider>
       </body>
     </html>
